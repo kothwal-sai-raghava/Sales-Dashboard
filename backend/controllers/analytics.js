@@ -2,7 +2,7 @@ const { Sale, Product, Customer, Order } = require('../models');
 const { fn, col, Op } = require('sequelize');
 const sequelize = require('../config/db');
 
-// 📊 Revenue & Avg Order Value
+// Revenue & Avg Order Value
 const aggregateRevenue = async (req, res) => {
   try {
     const { startDate, endDate } = req.query;
@@ -20,7 +20,7 @@ const aggregateRevenue = async (req, res) => {
   }
 };
 
-// 🌍 Region Stats
+//Region Stats
 const regionStats = async (req, res) => {
   try {
     const { startDate, endDate } = req.query;
